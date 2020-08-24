@@ -118,5 +118,6 @@ Feedstock Maintainers
 =====================
 
 * [@akchinSTC](https://github.com/akchinSTC/)
+* [@kevin-bates](https://github.com/kevin-bates/)
 * [@lresende](https://github.com/lresende/)
 
