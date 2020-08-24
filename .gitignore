@@ -1,11 +1,3 @@
-.DS_Store
-
-# PyCharm
-.idea/
-*.iml
-
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
+*.pyc
 
 build_artifacts
