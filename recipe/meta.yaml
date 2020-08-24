@@ -1,5 +1,6 @@
 {% set name = "elyra" %}
 {% set version = "1.0.1" %}
+{% set sha256 = "18666f62931b32f50085a4bf4383e4c234f33fee0e23ead4e1f96ac32a04546d" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 18666f62931b32f50085a4bf4383e4c234f33fee0e23ead4e1f96ac32a04546d
+  sha256: {{ sha256 }}
 
 build:
   number: 1
