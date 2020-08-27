@@ -1,6 +1,6 @@
 {% set name = "elyra" %}
-{% set version = "1.0.1" %}
-{% set sha256 = "18666f62931b32f50085a4bf4383e4c234f33fee0e23ead4e1f96ac32a04546d" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "c2b1f37e4c1a96a092ca3233270ae747701d3264646b979b9b37f1dff2700b5e" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -58,16 +58,9 @@ about:
   doc_source_url: https://github.com/elyra-ai/elyra/tree/master/docs
   license: Apache-2.0
   license_file: LICENSE
-  summary: "Elyra, a set of AI-centric extensions for JupyterLab Notebooks."
+  summary: Elyra, a set of AI-centric extensions for JupyterLab Notebooks.
   description: >
-    Elyra currently includes:
-    Notebook Pipelines visual editor
-    Ability to run a notebook as a batch job
-    Hybrid runtime support
-    Python script execution capabilities within the editor
-    Reusable Code Snippets (Experimental)
-    Notebook versioning based on git integration
-    Notebook navigation using auto-generated Table of Contents
+    Elyra currently includes: Notebook Pipelines visual editor Ability to run a notebook as a batch job Hybrid runtime support Python script execution capabilities within the editor Reusable Code Snippets (Experimental) Notebook versioning based on git integration Notebook navigation using auto-generated Table of Contents
     Reusable configuration for runtimes
 
 extra:
