@@ -37,7 +37,7 @@ requirements:
     - nbdime >=2.0.0
     - notebook >=6.0.3
     - papermill >=2.1.3
-    - python
+    - python >=3.6
     - requests >=2.9.1,<3.0
     - rfc3986-validator >=0.1.1
     - traitlets >=4.3.2
