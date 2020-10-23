@@ -5,9 +5,13 @@ Home: https://github.com/elyra-ai/elyra
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/elyra-feedstock/blob/master/LICENSE.txt)
 
 Summary: Elyra, a set of AI-centric extensions for JupyterLab Notebooks.
+
+Development: https://github.com/elyra-ai/elyra
+
+Documentation: https://elyra.readthedocs.io/en/latest
 
 Elyra currently includes: Notebook Pipelines visual editor Ability to run a notebook as a batch job Hybrid runtime support Python script execution capabilities within the editor Reusable Code Snippets (Experimental) Notebook versioning based on git integration Notebook navigation using auto-generated Table of Contents Reusable configuration for runtimes
 
