@@ -28,13 +28,13 @@ requirements:
     - jinja2 >=2.11,<3.0
     - jsonschema >=3.2.0
     - jupyter_core >=4.0,<5.0
-    - jupyter_client >=6.1,
+    - jupyter_client >=6.1
     - jupyterlab >=2.0.0,<3.0.0
     - jupyterlab-git ==0.22.3
     - kfp ==1.0.0
     - kfp-notebook >=0.14.0,<0.15.0
     - minio >=5.0.7
-    - nbclient >=0.5.1,
+    - nbclient >=0.5.1
     - nbconvert >=5.6.1,<6.0
     - nbdime >=2.0.0
     - nbresuse >=0.3.6
