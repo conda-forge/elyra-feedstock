@@ -1,6 +1,6 @@
 {% set name = "elyra" %}
-{% set version = "1.4.0" %}
-{% set sha256 = "9c99effe56b36c8bfbcb2fff38d7d0e2cde0681ebfee9af57747a433c54899ee" %}
+{% set version = "1.4.1" %}
+{% set sha256 = "4da005bddc218211777e8f730b7f0a5b6cfdab7a951ff80538460f4128e264ad" %}
 
 package:
   name: {{ name|lower }}
