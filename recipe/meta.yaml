@@ -63,11 +63,8 @@ test:
     - elyra
     - elyra.api
   commands:
-    - pip check
     - elyra-metadata --help
     - elyra-pipeline --help
-  requires:
-    - pip
 
 about:
   home: https://github.com/elyra-ai/elyra
