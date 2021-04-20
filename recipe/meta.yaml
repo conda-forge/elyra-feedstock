@@ -61,10 +61,6 @@ requirements:
 test:
   imports:
     - elyra
-    - elyra.api
-  commands:
-    - elyra-metadata --help
-    - elyra-pipeline --help
 
 about:
   home: https://github.com/elyra-ai/elyra
