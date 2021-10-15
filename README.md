@@ -32,6 +32,8 @@ Current build status
 Current release info
 ====================
 
+Update : Elyra 3.x is currently waiting for [kfp-pipeline-spec](https://github.com/conda-forge/staged-recipes/pull/16307) package to publish before we can push our conda packages. We hope to have this completed soon.
+
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-elyra-green.svg)](https://anaconda.org/conda-forge/elyra) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/elyra.svg)](https://anaconda.org/conda-forge/elyra) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/elyra.svg)](https://anaconda.org/conda-forge/elyra) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/elyra.svg)](https://anaconda.org/conda-forge/elyra) |
