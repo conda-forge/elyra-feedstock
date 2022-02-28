@@ -32,8 +32,6 @@ Current build status
 Current release info
 ====================
 
-Update : Elyra 3.x is currently waiting for [kfp-pipeline-spec](https://github.com/conda-forge/staged-recipes/pull/16307) package to publish before we can push our conda packages. We hope to have this completed soon.
-
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-elyra-green.svg)](https://anaconda.org/conda-forge/elyra) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/elyra.svg)](https://anaconda.org/conda-forge/elyra) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/elyra.svg)](https://anaconda.org/conda-forge/elyra) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/elyra.svg)](https://anaconda.org/conda-forge/elyra) |
@@ -64,7 +62,8 @@ conda search elyra --channel conda-forge
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
