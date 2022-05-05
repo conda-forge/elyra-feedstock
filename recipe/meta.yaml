@@ -1,5 +1,5 @@
 {% set name = "elyra" %}
-{% set version = "3.8.0" %}
+{% set version = "3.8.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/elyra-{{ version }}.tar.gz
-  sha256: afd6633ab2251d91986e1ba47d058808c7315fb1ef70ba7e8be0f56d9cb48dfa
+  sha256: b4e61d6fc24f7ce67d5d051a6ae2de57123996d5c129bd9b8ebe7da083bd31bf
 
 build:
   number: 0
@@ -37,7 +37,7 @@ requirements:
     - jupyter_client >=6.1.7
     - jupyter_core >=4.6.0
     - jupyter_server >=1.7.0
-    - jupyterlab >=3.3
+    - jupyterlab >=3.4.0
     - jupyterlab-git ~=0.32.0
     - jupyterlab-lsp >=3.8.0
     - jupyter-resource-usage >=0.5.1
