@@ -1,5 +1,5 @@
 {% set name = "elyra" %}
-{% set version = "3.9.1" %}
+{% set version = "3.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/elyra-{{ version }}.tar.gz
-  sha256: cc28e0ade1ff873b47c2ad18aca83ab0f370a75f198497578b9d815c7a20572b
+  sha256: b10b7c8951c8b299f8dc060fb71c41a0dd2d40e751f7c455388441e79a77f537
 
 build:
   number: 0
