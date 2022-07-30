@@ -11,7 +11,7 @@ source:
   sha256: 558bbed18304ac8756d0fc87cb0e8c687a6048b1421d292818a626af5397d856
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - elyra-metadata = elyra.metadata.metadata_app:MetadataApp.main
