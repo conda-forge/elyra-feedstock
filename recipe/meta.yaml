@@ -32,9 +32,9 @@ requirements:
     - deprecation
     - entrypoints >=0.3
     - jinja2 >=3
-    - jsonschema <5.0,>=3.2.0
+    - jsonschema <4.0,>=3.2.0
     - jupyter_client >=6.1.7
-    - jupyter_core <6,>=4.11.2
+    - jupyter_core <5,>=4.11.2
     - jupyter_events <0.5.0
     - jupyter-packaging >=0.10
     - jupyter-resource-usage >=0.5.1
@@ -67,10 +67,10 @@ requirements:
 test:
   imports:
     - elyra
- # commands:
- #   - pip check
- # requires:
- #   - pip
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/elyra-ai/elyra
