@@ -68,11 +68,12 @@ requirements:
 test:
   imports:
     - elyra
-# conda compatibility for jupyter_core and python 3.7 https://github.com/elyra-ai/elyra/issues/3069    
-#  commands:
-#    - pip check
-#  requires:
-#    - pip
+# conda compatibility for jupyter_core and python 3.7 https://github.com/elyra-ai/elyra/issues/3069
+# Wait for pypi build >3.14.1 with https://github.com/elyra-ai/elyra/pull/3071
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/elyra-ai/elyra
