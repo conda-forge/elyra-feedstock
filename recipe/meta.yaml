@@ -34,8 +34,7 @@ requirements:
     - jinja2 >=3
     - jsonschema >=3.2.0,<4.0
     - jupyter_client >=6.1.7
-# https://github.com/elyra-ai/elyra/issues/3069    
-    - jupyter_core >=4.11.2,<5
+    - jupyter_core >=4.11.2
     - jupyter_events <0.5.0
     - jupyter-packaging >=0.10
     - jupyter-resource-usage >=0.5.1
