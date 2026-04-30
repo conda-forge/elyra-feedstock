@@ -1,5 +1,5 @@
 {% set name = "elyra" %}
-{% set version = "3.15.0" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/elyra-{{ version }}.tar.gz
-  sha256: ec12a3ed329adc052aabdfb8ba092e3d27ba96aa0561b213e8b9f2ba362d7884
+  sha256: ca954222c553345f9a199cb7f1db565c2b47f7f14ab486d46bc43632b2bae6b0
 
 build:
   noarch: python
@@ -16,7 +16,7 @@ build:
     - elyra-pipeline = elyra.cli.pipeline_app:pipeline
     - jupyter-elyra = elyra.elyra_app:launch_instance
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -27,38 +27,46 @@ requirements:
     - python >={{ python_min }}
     - autopep8 >=1.5.0
     - black >=22.8.0
-    - click >=8
+    - click ==8.1.8
     - colorama
     - deprecation
     - entrypoints >=0.3
     - jinja2 >=3
     - jsonschema >=3.2.0
-    - jupyter_client >=6.1.7
-    - jupyter_core >=4.11.0
-    - jupyter_events >=0.6.2
-    - jupyter-packaging >=0.10
-    - jupyter-resource-usage >=0.5.1
-    - jupyter_server >=1.7.0
-    - jupyterlab-git >=0.32,<1.0
-    - jupyterlab-lsp >=3.8.0
-    - jupyterlab >=3.4.6,<4.0
-    - kfp >=1.7.0,<2.0,!=1.7.2
+    - jupyter_client >=7.4.9
+    - jupyter_core >=5.3.1
+    - jupyter_events >=0.7.0
+    - jupyter-packaging >=0.12.3
+    - jupyter-resource-usage >=1.1.0,<1.2.0
+    - jupyter_server >=2.7.3
+    - jupyterlab >=4.4,<5.0
+    - jupyterlab-git >=0.51.2,<0.52.0
+    - jupyterlab-lsp >=5.1.0,<5.2.0
     - markupsafe >=2.1
-    - minio >=7.0.0
-    - nbclient >=0.5.1
+    - minio >=7.0.0,!=7.2.1
+    - nbclient >=0.10.0
     - nbconvert >=6.5.1
-    - nbdime >=3.1,<4.0
+    - nbdime >=4.0.1,<4.1.0
     - nbformat >=5.1.2
     - networkx >=2.5.1
     - papermill >=2.3.4
     - pygithub
-    - python-lsp-server >=1.1.0
+    - python-lsp-server >=1.11.0
+    - flake8 >=7.1
+    - mccabe >=0.7.0
+    - pycodestyle >=2.12.0
+    - pydocstyle >=6.3.0
+    - pyflakes >=3.2.0
+    - pylint >=3.1
+    - rope >=1.11.0
+    - whatthepatch >=1.0.2
+    - yapf >=0.33.0
     - pyyaml >=5.3.1
-    - requests >=2.25.1
+    - requests >=2.31
     - rfc3986-validator >=0.1.1
     - tornado >=6.1.0
     - traitlets >=4.3.2
-    - typing-extensions >=3.10,<5
+    - typing-extensions >=3.10
     - urllib3 >=1.26.5
     - watchdog >=2.1.3
     - websocket-client
@@ -67,11 +75,10 @@ requirements:
 test:
   imports:
     - elyra
-# conda compatibility for jupyter_core and python 3.7 https://github.com/elyra-ai/elyra/issues/3069
-# Wait for pypi build >3.14.1 with https://github.com/elyra-ai/elyra/pull/3071
-# Wait for pypi build >3.14.1 with https://github.com/elyra-ai/elyra/pull/3076
   commands:
-    - pip check
+    # appengine-python-standard is an accidental upstream dep (never imported, not on conda-forge)
+    - pip check 2>&1 | grep -v "appengine-python-standard" | grep -E "which is not installed|has requirement" && exit 1 || true
+    - python -c "from elyra.metadata.metadata_app import MetadataApp"
   requires:
     - pip
     - python {{ python_min }}
@@ -80,7 +87,7 @@ about:
   home: https://github.com/elyra-ai/elyra
   dev_url: https://github.com/elyra-ai/elyra
   doc_url: https://elyra.readthedocs.io/en/latest
-  doc_source_url: https://github.com/elyra-ai/elyra/tree/master/docs
+  doc_source_url: https://github.com/elyra-ai/elyra/tree/main/docs
   license: Apache-2.0
   license_file: LICENSE
   summary: Elyra, a set of AI-centric extensions for JupyterLab Notebooks.
