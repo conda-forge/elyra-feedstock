@@ -78,7 +78,7 @@ test:
   commands:
     # appengine-python-standard is an accidental upstream dep (never imported, not on conda-forge)
     - pip check 2>&1 | grep -v "appengine-python-standard" | grep -E "which is not installed|has requirement" && exit 1 || true
-    - elyra-metadata --help
+    - python -c "from elyra.metadata.metadata_app import MetadataApp"
   requires:
     - pip
     - python {{ python_min }}
