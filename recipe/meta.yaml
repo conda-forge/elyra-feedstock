@@ -1,5 +1,5 @@
 {% set name = "elyra" %}
-{% set version = "4.0.0" %}
+{% set version = "4.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/elyra-{{ version }}.tar.gz
-  sha256: ca954222c553345f9a199cb7f1db565c2b47f7f14ab486d46bc43632b2bae6b0
+  sha256: db173068f157b8b9947a336dbb50fc91bf42bfb00f9d58466b423c52be59a7d9
 
 build:
   noarch: python
@@ -16,7 +16,7 @@ build:
     - elyra-pipeline = elyra.cli.pipeline_app:pipeline
     - jupyter-elyra = elyra.elyra_app:launch_instance
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   host:
